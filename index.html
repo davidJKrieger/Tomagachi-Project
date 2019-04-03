@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lil' Pets</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css">
+</head>
+<body>
+    <div class="sidenav">
+        <div class=time>TIME:</div>
+        
+        <button class="start">START</button>
+        <button class="reset">RESET</button>
+    <div class="stat-buffer"> </div>
+        <div class="hunger">
+            <h2></h2>
+        </div>
+        <div class="happy">
+            <h2></h2>
+        </div>
+        <div class="sleep">
+            <h2></h2>
+        </div>
+        <div class="bored">
+            <h2></h2>
+        </div>
+        <div class="age">
+            <h2></h2>
+        </div>
+   
+    <div class="btn-wrapper">
+        <button class="feed">Feed your lil' pet</button>
+        <button class="play">Play with your lil' pet</button>
+        <p>Flip The Lights</p>
+        <button class='lights'>OFF</button>
+        <!-- <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label> -->
+    </div>
+    </div>
+
+    <div class="content">
+        <h1></h1>
+        
+        <form>
+            <input type="text" placeholder="Where is your lil' pet?          ( TYPE A NAME )" id="input-name" autocomplete="off">
+            <button type="submit">submit</button>  
+        </form>
+       
+        <div class="image-wrapper">
+          <img id="bear" src='images/flappingBlue.gif' style= 'max-width:500px' />
+          <img id='background' src='images/background.jpg' style= 'width:100%;max-width:800px' />
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
