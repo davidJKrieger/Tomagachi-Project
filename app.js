@@ -158,7 +158,7 @@ $('.feed').click(function () {
 if ((pet.hunger>=1)&&(pet.hunger<=10)){
     pet.hunger = pet.hunger - 1
     $('#bear').attr('src', 'images/dancingBear.gif')
-if (pet.happiness < 10 && pet.happiness >= 0) {
+if (pet.happiness < 10 && pet.happiness >= 1) {
         pet.happiness = pet.happiness + 1
     }
     $('#bear').attr('src', 'images/dancingBear.gif')
@@ -177,7 +177,7 @@ console.log('clicked feed')
 //happiness goes up
 //bear dances
 $('.play').click(function () {
-    if ((pet.boredom >=0) && (pet.boredom <= 10)) {
+    if ((pet.boredom >=1) && (pet.boredom <= 10)) {
         pet.boredom = pet.boredom- 1
     if (pet.happiness <10 && pet.happiness >=1){ pet.happiness = pet.happiness +1}
     $('#bear').attr('src', 'images/dancingBear.gif')
@@ -189,12 +189,6 @@ $('.play').click(function () {
     }
 })
 //LIGHTS
-//should toggle lights off and on
-//lights on should make sleepiness go up with time
-//lights off should let pet sleep until sleepiness goes back down
-//just an off button for now
-//MVP- turns lights off only
-//css has toggle commented out waiting for jQuery functionality
 $('.lights').click(function () {
     $('#background').attr('src', 'images/background night.jpeg')
     pet.sleepiness = pet.sleepiness + 10
